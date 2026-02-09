@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login Form</div>
+    <div class="title signup">Signup Form</div>
+  </div>
+
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Signup</label>
+      <div class="slider-tab"></div>
+    </div>
+
+    <div class="form-inner">
+
+      <!-- LOGIN FORM -->
+      <form action="#" class="login" id="loginForm">
+        <div class="field">
+          <input type="email" id="loginEmail" placeholder="Email Address" required min="20" max="30">
+        </div>
+        <div class="field">
+          <input type="password" id="loginPassword" placeholder="Password" required min="6" max="15">
+        </div>
+        <div class="pass-link"><a href="#">Forgot password?</a></div>
+
+        <!-- ERROR MESSAGE -->
+        <p id="errorMsg" class="error-msg"></p>
+
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login">
+        </div>
+
+        <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form action="#" class="signup">
+        <div class="field">
+          <input type="email" id="signupEmail" placeholder="Email Address" required min="20" max="30">
+        </div>
+        <div class="field">
+          <input type="password" id="signupPassword" placeholder="Password" required min="6" max="15">
+        </div>
+        <div class="field">
+          <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required>
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Signup">
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- OUTPUT SECTION -->
+<div id="output" class="output-box" style="display:none;">
+  <h3>Entered Details</h3>
+  <p><strong>Email Address:</strong> <span id="outUsername"></span></p>
+  <p><strong>Password:</strong> <span id="outPassword"></span></p>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
